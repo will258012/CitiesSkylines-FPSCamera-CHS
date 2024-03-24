@@ -1,17 +1,11 @@
-# Cities: Skylines - First Person Camera Mod v2
+# Cities: Skylines - First Person Camera - Financial Districts Fix
 
-<img src="images/banner.svg" width="750px"/>
+# Please UNSUBSCRIBE or DELETE the [original mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2764243667) first!
 
-> This is an updated version for [First Person Camera: Updated](https://steamcommunity.com/sharedfiles/filedetails/?id=650805785) by tony56a
-
-
-[First Person Camera](https://github.com/Asu4ni/CitiesSkylines-FPSCamera) is a lightweight mod that attaches an extra **Camera Controller** to the original [Cities: Skylines](https://www.citiesskylines.com) game to enable users to view their cities in first person perspective.
-
-Refer to the [wiki](https://github.com/Asu4ni/CitiesSkylines-FPSCamera/wiki) page for instructions and guide on how to use the mode as well as how to contribute to the development.
+This mod has fixed some issues in the original mod.
+- Fix that the bank service vehicle in the Financial Districts DLC cannot enter FPSCamera.
+- Fix the issue of incorrect text display on the information panel of taxis and maintenance vehicles.
 
 ---
-> The mod can also be downloaded on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2764243667).
+> The mod can also be downloaded on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3198388677).
 
-
-<p><img src="images/image1.png" width="375px" />
-<img src="images/image4.png" width="375px" /></p>
