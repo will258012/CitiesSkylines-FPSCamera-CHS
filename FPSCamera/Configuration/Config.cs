@@ -188,19 +188,23 @@ namespace FPSCamera.Configuration
         public readonly CfFloat CamNearClipPlane = new CfFloat(1f, min: .125f, max: 64f);
         [Config("FoViewScrollfactor", "Field of View scaling factor by scrolling")]
         public readonly CfFloat FoViewScrollfactor = new CfFloat(1.05f, 1.01f, 2f);
-
         [Config("VehicleFixedOffset", "Cam fixed offset for vehicle")]
         public readonly CfOffset VehicleFixedOffset = new CfOffset(
-            new CfFloat(3f), new CfFloat(2f), new CfFloat(0f));
+        new CfFloat(3f, min: -20f, max: 20f),
+        new CfFloat(2f, min: -20f, max: 20f),
+        new CfFloat(0f, min: -20f, max: 20f));
         [Config("MidVehFixedOffset", "Cam fixed offset for vehicle in the middle")]
         public readonly CfOffset MidVehFixedOffset = new CfOffset(
-            new CfFloat(-2f), new CfFloat(3f), new CfFloat(0f));
+        new CfFloat(-2f, min: -20f, max: 20f),
+        new CfFloat(3f, min: -20f, max: 20f),
+        new CfFloat(0f, min: -20f, max: 20f));
         [Config("PedestrianFixedOffset", "Cam fixed offset for pedestrian")]
         public readonly CfOffset PedestrianFixedOffset = new CfOffset(
-            new CfFloat(0f), new CfFloat(2f), new CfFloat(0f));
-
+        new CfFloat(0f, min: -20f, max: 20f),
+        new CfFloat(2f, min: -20f, max: 20f),
+        new CfFloat(0f, min: -20f, max: 20f));
         [Config("MaxExitingDuration", "Max duration for exiting fps cam")]
-        public readonly CfFloat MaxExitingDuration = new CfFloat(2f, 0f);
+        public readonly CfFloat MaxExitingDuration = new CfFloat(2f, min: .1f, max: 10f);
         /*-------------------------------------------------------------------*/
 
         // Return a ratio[0f, 1f] representing the proportion to advance to the target

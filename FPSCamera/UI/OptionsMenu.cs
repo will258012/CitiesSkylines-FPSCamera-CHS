@@ -73,11 +73,14 @@ namespace FPSCamera.UI
                 _settings.Add(group.Add<SliderSetting>(props.Swap(Config.G.RotateSensitivity)));
                 props.stepSize = .5f; props.valueFormat = "F1";
                 _settings.Add(group.Add<SliderSetting>(props.Swap(Config.G.RotateKeyFactor)));
-
+                props.stepSize = .1f; props.valueFormat = "F1";
+                _settings.Add(group.Add<SliderSetting>(props.Swap(Config.G.FoViewScrollfactor)));
 
                 _settings.Add(group.Add<ToggleSetting>(props.Swap(Config.G.EnableDof)));
                 props.stepSize = 1f; props.valueFormat = "F0";
                 _settings.Add(group.Add<SliderSetting>(props.Swap(Config.G.CamFieldOfView)));
+                props.stepSize = .1f; props.valueFormat = "F1";
+                _settings.Add(group.Add<SliderSetting>(props.Swap(Config.G.CamNearClipPlane)));
             }
             {
                 var group = settingPanel.Add<Group>(new LayoutProperties
@@ -111,6 +114,9 @@ namespace FPSCamera.UI
                 _settings.Add(group.Add<SliderSetting>(props.Swap(Config.G.InstantMoveMax)));
 
                 _settings.Add(group.Add<OffsetSetting>(props.Swap(Config.G.FollowCamOffset)));
+                _settings.Add(group.Add<OffsetSetting>(props.Swap(Config.G.VehicleFixedOffset)));
+                _settings.Add(group.Add<OffsetSetting>(props.Swap(Config.G.MidVehFixedOffset)));
+                _settings.Add(group.Add<OffsetSetting>(props.Swap(Config.G.PedestrianFixedOffset)));
             }
             {
                 var group = settingPanel.Add<Group>(new LayoutProperties
@@ -196,6 +202,9 @@ namespace FPSCamera.UI
 
                 props.stepSize = 1f; props.valueFormat = "F0";
                 _settings.Add(group.Add<SliderSetting>(props.Swap(Config.G.MaxTransRotate)));
+
+                props.stepSize = .1f; props.valueFormat = "F1";
+                _settings.Add(group.Add<SliderSetting>(props.Swap(Config.G.MaxExitingDuration)));
             }
         }
 
